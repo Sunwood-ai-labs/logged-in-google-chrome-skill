@@ -6,18 +6,32 @@ The workflow intentionally separates login from automation.
 
 ## Diagram files
 
-- [Repository Structure](https://github.com/Sunwood-ai-labs/logged-in-google-chrome-skill/blob/main/docs/public/logged-in-google-chrome-repository-structure.drawio)
-- [Runtime Workflow](https://github.com/Sunwood-ai-labs/logged-in-google-chrome-skill/blob/main/docs/public/logged-in-google-chrome-runtime-workflow.drawio)
-- [Boundaries and Rules](https://github.com/Sunwood-ai-labs/logged-in-google-chrome-skill/blob/main/docs/public/logged-in-google-chrome-boundaries-and-rules.drawio)
-- [Repository Structure (JA)](https://github.com/Sunwood-ai-labs/logged-in-google-chrome-skill/blob/main/docs/public/logged-in-google-chrome-repository-structure-ja.drawio)
-- [Runtime Workflow (JA)](https://github.com/Sunwood-ai-labs/logged-in-google-chrome-skill/blob/main/docs/public/logged-in-google-chrome-runtime-workflow-ja.drawio)
-- [Boundaries and Rules (JA)](https://github.com/Sunwood-ai-labs/logged-in-google-chrome-skill/blob/main/docs/public/logged-in-google-chrome-boundaries-and-rules-ja.drawio)
+- Repository Structure: [SVG preview](/logged-in-google-chrome-repository-structure.svg) / [Draw.io source](https://github.com/Sunwood-ai-labs/logged-in-google-chrome-skill/blob/main/docs/public/logged-in-google-chrome-repository-structure.drawio)
+- Runtime Workflow: [SVG preview](/logged-in-google-chrome-runtime-workflow.svg) / [Draw.io source](https://github.com/Sunwood-ai-labs/logged-in-google-chrome-skill/blob/main/docs/public/logged-in-google-chrome-runtime-workflow.drawio)
+- Boundaries and Rules: [SVG preview](/logged-in-google-chrome-boundaries-and-rules.svg) / [Draw.io source](https://github.com/Sunwood-ai-labs/logged-in-google-chrome-skill/blob/main/docs/public/logged-in-google-chrome-boundaries-and-rules.drawio)
+- Repository Structure (JA): [SVG preview](/logged-in-google-chrome-repository-structure-ja.svg) / [Draw.io source](https://github.com/Sunwood-ai-labs/logged-in-google-chrome-skill/blob/main/docs/public/logged-in-google-chrome-repository-structure-ja.drawio)
+- Runtime Workflow (JA): [SVG preview](/logged-in-google-chrome-runtime-workflow-ja.svg) / [Draw.io source](https://github.com/Sunwood-ai-labs/logged-in-google-chrome-skill/blob/main/docs/public/logged-in-google-chrome-runtime-workflow-ja.drawio)
+- Boundaries and Rules (JA): [SVG preview](/logged-in-google-chrome-boundaries-and-rules-ja.svg) / [Draw.io source](https://github.com/Sunwood-ai-labs/logged-in-google-chrome-skill/blob/main/docs/public/logged-in-google-chrome-boundaries-and-rules-ja.drawio)
 
 ## What Each Diagram Shows
 
 - `Repository Structure`: main skill files, scripts, docs, and metadata
 - `Runtime Workflow`: the happy-path flow from launching Chrome to reusing the authenticated session
 - `Boundaries and Rules`: the separation between the main Chrome profile and the dedicated automation profile, plus the core safety rules
+
+## SVG previews
+
+### Repository Structure
+
+![Repository Structure](/logged-in-google-chrome-repository-structure.svg)
+
+### Runtime Workflow
+
+![Runtime Workflow](/logged-in-google-chrome-runtime-workflow.svg)
+
+### Boundaries and Rules
+
+![Boundaries and Rules](/logged-in-google-chrome-boundaries-and-rules.svg)
 
 ## Sequence
 

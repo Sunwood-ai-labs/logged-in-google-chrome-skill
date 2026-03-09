@@ -6,18 +6,32 @@
 
 ## Draw.io ファイル
 
-- [Repository Structure](https://github.com/Sunwood-ai-labs/logged-in-google-chrome-skill/blob/main/docs/public/logged-in-google-chrome-repository-structure.drawio)
-- [Runtime Workflow](https://github.com/Sunwood-ai-labs/logged-in-google-chrome-skill/blob/main/docs/public/logged-in-google-chrome-runtime-workflow.drawio)
-- [Boundaries and Rules](https://github.com/Sunwood-ai-labs/logged-in-google-chrome-skill/blob/main/docs/public/logged-in-google-chrome-boundaries-and-rules.drawio)
-- [Repository Structure (JA)](https://github.com/Sunwood-ai-labs/logged-in-google-chrome-skill/blob/main/docs/public/logged-in-google-chrome-repository-structure-ja.drawio)
-- [Runtime Workflow (JA)](https://github.com/Sunwood-ai-labs/logged-in-google-chrome-skill/blob/main/docs/public/logged-in-google-chrome-runtime-workflow-ja.drawio)
-- [Boundaries and Rules (JA)](https://github.com/Sunwood-ai-labs/logged-in-google-chrome-skill/blob/main/docs/public/logged-in-google-chrome-boundaries-and-rules-ja.drawio)
+- Repository Structure: [SVG プレビュー](/logged-in-google-chrome-repository-structure.svg) / [Draw.io ソース](https://github.com/Sunwood-ai-labs/logged-in-google-chrome-skill/blob/main/docs/public/logged-in-google-chrome-repository-structure.drawio)
+- Runtime Workflow: [SVG プレビュー](/logged-in-google-chrome-runtime-workflow.svg) / [Draw.io ソース](https://github.com/Sunwood-ai-labs/logged-in-google-chrome-skill/blob/main/docs/public/logged-in-google-chrome-runtime-workflow.drawio)
+- Boundaries and Rules: [SVG プレビュー](/logged-in-google-chrome-boundaries-and-rules.svg) / [Draw.io ソース](https://github.com/Sunwood-ai-labs/logged-in-google-chrome-skill/blob/main/docs/public/logged-in-google-chrome-boundaries-and-rules.drawio)
+- Repository Structure (JA): [SVG プレビュー](/logged-in-google-chrome-repository-structure-ja.svg) / [Draw.io ソース](https://github.com/Sunwood-ai-labs/logged-in-google-chrome-skill/blob/main/docs/public/logged-in-google-chrome-repository-structure-ja.drawio)
+- Runtime Workflow (JA): [SVG プレビュー](/logged-in-google-chrome-runtime-workflow-ja.svg) / [Draw.io ソース](https://github.com/Sunwood-ai-labs/logged-in-google-chrome-skill/blob/main/docs/public/logged-in-google-chrome-runtime-workflow-ja.drawio)
+- Boundaries and Rules (JA): [SVG プレビュー](/logged-in-google-chrome-boundaries-and-rules-ja.svg) / [Draw.io ソース](https://github.com/Sunwood-ai-labs/logged-in-google-chrome-skill/blob/main/docs/public/logged-in-google-chrome-boundaries-and-rules-ja.drawio)
 
 ## 図ごとの役割
 
 - `Repository Structure`: Skill の主要ファイル、スクリプト、ドキュメント、メタデータの構成
 - `Runtime Workflow`: Chrome 起動から認証済みセッション再利用までの基本フロー
 - `Boundaries and Rules`: 普段使いの Chrome と自動化専用プロファイルの分離、および安全ルール
+
+## SVG プレビュー
+
+### Repository Structure (JA)
+
+![Repository Structure JA](/logged-in-google-chrome-repository-structure-ja.svg)
+
+### Runtime Workflow (JA)
+
+![Runtime Workflow JA](/logged-in-google-chrome-runtime-workflow-ja.svg)
+
+### Boundaries and Rules (JA)
+
+![Boundaries and Rules JA](/logged-in-google-chrome-boundaries-and-rules-ja.svg)
 
 ## 実行シーケンス
 

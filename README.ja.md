@@ -149,12 +149,12 @@ npm run docs:dev
 
 Draw.io files:
 
-- [Repository Structure](./docs/public/logged-in-google-chrome-repository-structure.drawio)
-- [Runtime Workflow](./docs/public/logged-in-google-chrome-runtime-workflow.drawio)
-- [Boundaries and Rules](./docs/public/logged-in-google-chrome-boundaries-and-rules.drawio)
-- [Repository Structure (JA)](./docs/public/logged-in-google-chrome-repository-structure-ja.drawio)
-- [Runtime Workflow (JA)](./docs/public/logged-in-google-chrome-runtime-workflow-ja.drawio)
-- [Boundaries and Rules (JA)](./docs/public/logged-in-google-chrome-boundaries-and-rules-ja.drawio)
+- Repository Structure: [SVG](./docs/public/logged-in-google-chrome-repository-structure.svg) / [Draw.io](./docs/public/logged-in-google-chrome-repository-structure.drawio)
+- Runtime Workflow: [SVG](./docs/public/logged-in-google-chrome-runtime-workflow.svg) / [Draw.io](./docs/public/logged-in-google-chrome-runtime-workflow.drawio)
+- Boundaries and Rules: [SVG](./docs/public/logged-in-google-chrome-boundaries-and-rules.svg) / [Draw.io](./docs/public/logged-in-google-chrome-boundaries-and-rules.drawio)
+- Repository Structure (JA): [SVG](./docs/public/logged-in-google-chrome-repository-structure-ja.svg) / [Draw.io](./docs/public/logged-in-google-chrome-repository-structure-ja.drawio)
+- Runtime Workflow (JA): [SVG](./docs/public/logged-in-google-chrome-runtime-workflow-ja.svg) / [Draw.io](./docs/public/logged-in-google-chrome-runtime-workflow-ja.drawio)
+- Boundaries and Rules (JA): [SVG](./docs/public/logged-in-google-chrome-boundaries-and-rules-ja.svg) / [Draw.io](./docs/public/logged-in-google-chrome-boundaries-and-rules-ja.drawio)
 - [Architecture guide](./docs/guide/architecture.md)
 
 ## 💡 想定ユースケース

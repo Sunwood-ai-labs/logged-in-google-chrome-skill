@@ -148,6 +148,16 @@ npm install
 npm run docs:dev
 ```
 
+Architecture files:
+
+- [Repository Structure](./docs/public/logged-in-google-chrome-repository-structure.drawio)
+- [Runtime Workflow](./docs/public/logged-in-google-chrome-runtime-workflow.drawio)
+- [Boundaries and Rules](./docs/public/logged-in-google-chrome-boundaries-and-rules.drawio)
+- [Repository Structure (JA)](./docs/public/logged-in-google-chrome-repository-structure-ja.drawio)
+- [Runtime Workflow (JA)](./docs/public/logged-in-google-chrome-runtime-workflow-ja.drawio)
+- [Boundaries and Rules (JA)](./docs/public/logged-in-google-chrome-boundaries-and-rules-ja.drawio)
+- [Architecture guide](./docs/guide/architecture.md)
+
 ## 💡 Use Cases
 
 - Open Gmail in a logged-in Chrome session and let an agent draft or send an email

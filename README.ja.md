@@ -147,6 +147,16 @@ npm install
 npm run docs:dev
 ```
 
+Draw.io files:
+
+- [Repository Structure](./docs/public/logged-in-google-chrome-repository-structure.drawio)
+- [Runtime Workflow](./docs/public/logged-in-google-chrome-runtime-workflow.drawio)
+- [Boundaries and Rules](./docs/public/logged-in-google-chrome-boundaries-and-rules.drawio)
+- [Repository Structure (JA)](./docs/public/logged-in-google-chrome-repository-structure-ja.drawio)
+- [Runtime Workflow (JA)](./docs/public/logged-in-google-chrome-runtime-workflow-ja.drawio)
+- [Boundaries and Rules (JA)](./docs/public/logged-in-google-chrome-boundaries-and-rules-ja.drawio)
+- [Architecture guide](./docs/guide/architecture.md)
+
 ## 💡 想定ユースケース
 
 - Gmail をログイン済み状態で開き、エージェントに下書きや送信を任せる

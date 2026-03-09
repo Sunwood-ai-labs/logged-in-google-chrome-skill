@@ -1,0 +1,151 @@
+<div align="center">
+  <h1>Logged In Google Chrome</h1>
+  <img src="https://raw.githubusercontent.com/Sunwood-ai-labs/logged-in-google-chrome/main/docs/public/ogp.svg" alt="Logged In Google Chrome" width="320">
+  <p>
+    <img src="https://img.shields.io/badge/Chrome-Google%20Chrome-4285F4?logo=googlechrome&logoColor=white" alt="Google Chrome">
+    <img src="https://img.shields.io/badge/Playwright-CDP%20Attach-2EAD33?logo=playwright&logoColor=white" alt="Playwright">
+    <img src="https://img.shields.io/badge/VitePress-Docs-646CFF?logo=vitepress&logoColor=white" alt="VitePress">
+    <img src="https://img.shields.io/badge/Google-Manual%20Login-EA4335?logo=google&logoColor=white" alt="Google Login">
+  </p>
+  <p>
+    <a href="./README.md">
+      <img src="https://img.shields.io/badge/Language-English-blue.svg" alt="English">
+    </a>
+    <a href="./README.ja.md">
+      <img src="https://img.shields.io/badge/%E8%A8%80%E8%AA%9E-%E6%97%A5%E6%9C%AC%E8%AA%9E-lightgrey.svg" alt="Japanese">
+    </a>
+  </p>
+</div>
+
+Use a normal Google Chrome window with a dedicated profile directory, log into Google manually, and then attach Playwright over CDP. This workflow avoids the "This browser or app may not be secure" block that can appear when Google login is attempted from a Playwright-launched browser.
+
+## Features
+
+- Launch a dedicated Chrome profile that is safe to reuse for Gmail, Google Account, and other Google web apps
+- Keep the user's main Chrome profile separate from automation
+- Attach Playwright after login by using `chromium.connectOverCDP(...)`
+- Reuse the same logged-in Chrome session across multiple agent tasks
+- Include helper scripts for launch, shutdown, and CDP port verification
+- Ship bilingual project docs with VitePress in English and Japanese
+
+## Why This Exists
+
+Google login often rejects automation-first browser sessions with a message similar to:
+
+> This browser or app may not be secure
+
+This repository uses a more stable pattern:
+
+1. Start regular Google Chrome with a dedicated `--user-data-dir`
+2. Let the user log in manually
+3. Attach Playwright over CDP only after login succeeds
+
+## Requirements
+
+- Windows
+- Google Chrome installed
+- Node.js 20+ recommended
+- A workspace with `playwright` or `playwright-core` available when attaching from `js_repl`
+
+## Repository Layout
+
+```text
+logged-in-google-chrome/
+├─ SKILL.md
+├─ README.md
+├─ README.ja.md
+├─ agents/
+│  └─ openai.yaml
+├─ references/
+│  └─ troubleshooting.md
+├─ scripts/
+│  ├─ launch_logged_in_chrome.ps1
+│  ├─ close_logged_in_chrome.ps1
+│  └─ check_cdp_port.ps1
+└─ docs/
+   ├─ .vitepress/
+   ├─ en/
+   ├─ guide/
+   ├─ ja/
+   └─ public/
+```
+
+## Quick Start
+
+### 1. Launch dedicated Chrome
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\launch_logged_in_chrome.ps1
+```
+
+Default values:
+
+- User data dir: `D:\Prj\onizuka-playwright-profile`
+- CDP port: `9222`
+- Login URL: `https://accounts.google.com/`
+
+### 2. Log into Google manually
+
+Open the launched Chrome window and complete login yourself.
+
+### 3. Verify the CDP port
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\check_cdp_port.ps1
+```
+
+### 4. Attach Playwright
+
+```javascript
+var chromium;
+var attachedBrowser;
+var attachedContext;
+var attachedPage;
+
+{
+  const nm = await import("node:module");
+  const requireForPw = nm.createRequire("file:///D:/Prj/demo/package.json");
+  ({ chromium } = requireForPw("playwright-core"));
+
+  attachedBrowser = await chromium.connectOverCDP("http://127.0.0.1:9222");
+  attachedContext = attachedBrowser.contexts()[0];
+  attachedPage = attachedContext.pages()[0];
+}
+```
+
+## Scripts
+
+| Script | Purpose |
+| --- | --- |
+| `scripts/launch_logged_in_chrome.ps1` | Start normal Chrome with a dedicated user-data-dir and CDP port |
+| `scripts/close_logged_in_chrome.ps1` | Close Chrome processes that are using the dedicated profile |
+| `scripts/check_cdp_port.ps1` | Verify that the configured CDP port is reachable |
+
+## Safety Rules
+
+- Do not point Playwright at `%LOCALAPPDATA%\Google\Chrome\User Data`
+- Do not log into Google from a Playwright-launched Chrome profile
+- Do use a dedicated Chrome profile directory for automation-assisted work
+- Do connect Playwright only after the manual login step is complete
+
+## Documentation
+
+- English docs: [Project Docs](https://sunwood-ai-labs.github.io/logged-in-google-chrome/)
+- Japanese docs: [日本語ドキュメント](https://sunwood-ai-labs.github.io/logged-in-google-chrome/ja/)
+- Local VitePress setup:
+
+```bash
+cd docs
+npm install
+npm run docs:dev
+```
+
+## Use Cases
+
+- Open Gmail in a logged-in Chrome session and let an agent draft or send an email
+- Reuse a Google account session for account settings, Google Drive, or Google Docs tasks
+- Create a repeatable workflow for Codex or Playwright-based agents without touching the user's main browser profile
+
+## License
+
+This repository is provided as-is for practical automation workflows around logged-in Google Chrome sessions.

@@ -33,6 +33,20 @@
 
 ![Boundaries and Rules JA](/logged-in-google-chrome-boundaries-and-rules-ja.svg)
 
+## 英語版 SVG プレビュー
+
+### Repository Structure
+
+![Repository Structure](/logged-in-google-chrome-repository-structure.svg)
+
+### Runtime Workflow
+
+![Runtime Workflow](/logged-in-google-chrome-runtime-workflow.svg)
+
+### Boundaries and Rules
+
+![Boundaries and Rules](/logged-in-google-chrome-boundaries-and-rules.svg)
+
 ## 実行シーケンス
 
 1. 通常の Chrome を起動する

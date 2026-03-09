@@ -157,6 +157,18 @@ Draw.io files:
 - Boundaries and Rules (JA): [SVG](./docs/public/logged-in-google-chrome-boundaries-and-rules-ja.svg) / [Draw.io](./docs/public/logged-in-google-chrome-boundaries-and-rules-ja.drawio)
 - [Architecture guide](./docs/guide/architecture.md)
 
+### Repository Structure (JA)
+
+![Repository Structure JA](./docs/public/logged-in-google-chrome-repository-structure-ja.svg)
+
+### Runtime Workflow (JA)
+
+![Runtime Workflow JA](./docs/public/logged-in-google-chrome-runtime-workflow-ja.svg)
+
+### Boundaries and Rules (JA)
+
+![Boundaries and Rules JA](./docs/public/logged-in-google-chrome-boundaries-and-rules-ja.svg)
+
 ## 💡 想定ユースケース
 
 - Gmail をログイン済み状態で開き、エージェントに下書きや送信を任せる

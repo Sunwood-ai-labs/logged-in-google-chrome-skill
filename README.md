@@ -158,6 +158,18 @@ Architecture files:
 - Boundaries and Rules (JA): [SVG](./docs/public/logged-in-google-chrome-boundaries-and-rules-ja.svg) / [Draw.io](./docs/public/logged-in-google-chrome-boundaries-and-rules-ja.drawio)
 - [Architecture guide](./docs/guide/architecture.md)
 
+### Repository Structure
+
+![Repository Structure](./docs/public/logged-in-google-chrome-repository-structure.svg)
+
+### Runtime Workflow
+
+![Runtime Workflow](./docs/public/logged-in-google-chrome-runtime-workflow.svg)
+
+### Boundaries and Rules
+
+![Boundaries and Rules](./docs/public/logged-in-google-chrome-boundaries-and-rules.svg)
+
 ## 💡 Use Cases
 
 - Open Gmail in a logged-in Chrome session and let an agent draft or send an email

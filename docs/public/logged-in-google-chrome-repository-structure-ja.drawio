@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mxfile host="app.diagrams.net" agent="Codex" version="24.7.17">
+  <diagram id="repository-structure-ja" name="Repository Structure JA">
+    <mxGraphModel dx="1600" dy="960" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1060" pageHeight="360" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="repo" value="リポジトリ構成" style="swimlane;html=1;rounded=1;whiteSpace=wrap;container=1;horizontal=0;startSize=34;fillColor=#f8f1e7;strokeColor=#c98a2e;fontStyle=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="20" y="20" width="1020" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="repo_note" value="目的: Googleログインは手動のまま保ち、通常のChromeへPlaywrightをCDP接続して自動化する。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c98a2e;fontSize=13;" vertex="1" parent="repo">
+          <mxGeometry x="30" y="55" width="960" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="skill" value="SKILL.md&#xA;入口ドキュメント&#xA;ルールとクイックスタート" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;" vertex="1" parent="repo">
+          <mxGeometry x="40" y="140" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="scripts" value="scripts/&#xA;launch_logged_in_chrome.ps1&#xA;check_cdp_port.ps1&#xA;close_logged_in_chrome.ps1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=13;" vertex="1" parent="repo">
+          <mxGeometry x="250" y="140" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="references" value="references/&#xA;troubleshooting.md" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=13;" vertex="1" parent="repo">
+          <mxGeometry x="500" y="140" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="docs" value="docs/ (VitePress)&#xA;architecture / usage / getting-started / troubleshooting" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;" vertex="1" parent="repo">
+          <mxGeometry x="680" y="140" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="meta" value="README.md / README.ja.md&#xA;agents/openai.yaml" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=13;" vertex="1" parent="repo">
+          <mxGeometry x="900" y="140" width="90" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320" role="img" aria-label="Logged In Google Chrome Skill logo">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#9dbcfb" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+  <rect width="320" height="320" rx="64" fill="#ffffff"/>
+  <g filter="url(#shadow)">
+    <circle cx="160" cy="160" r="112" fill="#4285f4"/>
+    <circle cx="160" cy="160" r="72" fill="#ffffff"/>
+    <circle cx="160" cy="160" r="44" fill="#34a853"/>
+    <path d="M160 48a112 112 0 0 1 97 56H160Z" fill="#ea4335"/>
+    <path d="M61 106a112 112 0 0 0 99 166l48-83H123Z" fill="#fbbc05"/>
+  </g>
+</svg>

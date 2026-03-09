@@ -1,6 +1,6 @@
 <div align="center">
   <h1>Logged In Google Chrome Skill</h1>
-  <img src="https://raw.githubusercontent.com/Sunwood-ai-labs/logged-in-google-chrome-skill/main/docs/public/ogp.svg" alt="Logged In Google Chrome Skill" width="320">
+  <img src="https://raw.githubusercontent.com/Sunwood-ai-labs/logged-in-google-chrome-skill/main/docs/public/logo.svg" alt="Logged In Google Chrome Skill" width="220">
   <p>
     <img src="https://img.shields.io/badge/Chrome-Google%20Chrome-4285F4?logo=googlechrome&logoColor=white" alt="Google Chrome">
     <img src="https://img.shields.io/badge/Playwright-CDP%20Attach-2EAD33?logo=playwright&logoColor=white" alt="Playwright">

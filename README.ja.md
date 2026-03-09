@@ -1,6 +1,6 @@
 <div align="center">
-  <h1>Logged In Google Chrome</h1>
-  <img src="https://raw.githubusercontent.com/Sunwood-ai-labs/logged-in-google-chrome/main/docs/public/ogp.svg" alt="Logged In Google Chrome" width="320">
+  <h1>Logged In Google Chrome Skill</h1>
+  <img src="https://raw.githubusercontent.com/Sunwood-ai-labs/logged-in-google-chrome-skill/main/docs/public/ogp.svg" alt="Logged In Google Chrome Skill" width="320">
   <p>
     <img src="https://img.shields.io/badge/Chrome-Google%20Chrome-4285F4?logo=googlechrome&logoColor=white" alt="Google Chrome">
     <img src="https://img.shields.io/badge/Playwright-CDP%20Attach-2EAD33?logo=playwright&logoColor=white" alt="Playwright">
@@ -50,24 +50,24 @@ Google ログインは、Playwright から直接起動したブラウザだと�
 ## ディレクトリ構成
 
 ```text
-logged-in-google-chrome/
-├─ SKILL.md
-├─ README.md
-├─ README.ja.md
-├─ agents/
-│  └─ openai.yaml
-├─ references/
-│  └─ troubleshooting.md
-├─ scripts/
-│  ├─ launch_logged_in_chrome.ps1
-│  ├─ close_logged_in_chrome.ps1
-│  └─ check_cdp_port.ps1
-└─ docs/
-   ├─ .vitepress/
-   ├─ en/
-   ├─ guide/
-   ├─ ja/
-   └─ public/
+logged-in-google-chrome-skill/
+|- SKILL.md
+|- README.md
+|- README.ja.md
+|- agents/
+|  `- openai.yaml
+|- references/
+|  `- troubleshooting.md
+|- scripts/
+|  |- launch_logged_in_chrome.ps1
+|  |- close_logged_in_chrome.ps1
+|  `- check_cdp_port.ps1
+`- docs/
+   |- .vitepress/
+   |- en/
+   |- guide/
+   |- ja/
+   `- public/
 ```
 
 ## クイックスタート
@@ -130,8 +130,8 @@ var attachedPage;
 
 ## ドキュメント
 
-- 英語 docs: [Project Docs](https://sunwood-ai-labs.github.io/logged-in-google-chrome/)
-- 日本語 docs: [日本語ドキュメント](https://sunwood-ai-labs.github.io/logged-in-google-chrome/ja/)
+- 英語 docs: [Project Docs](https://sunwood-ai-labs.github.io/logged-in-google-chrome-skill/)
+- 日本語 docs: [日本語ドキュメント](https://sunwood-ai-labs.github.io/logged-in-google-chrome-skill/ja/)
 - ローカル起動:
 
 ```bash

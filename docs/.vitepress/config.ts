@@ -1,17 +1,17 @@
 import { defineConfig } from "vitepress";
 
-const siteTitle = "Logged In Google Chrome";
+const siteTitle = "Logged In Google Chrome Skill";
 const siteDescription =
   "Launch a dedicated Google Chrome profile, sign in manually, and attach Playwright over CDP.";
 const siteOrigin = "https://sunwood-ai-labs.github.io";
-const siteBase = "/logged-in-google-chrome/";
+const siteBase = "/logged-in-google-chrome-skill/";
 const siteUrl = new URL(siteBase, siteOrigin).toString();
 const ogImageUrl = new URL("ogp.svg", siteUrl).toString();
 
 const socialLinks = [
   {
     icon: "github",
-    link: "https://github.com/Sunwood-ai-labs/logged-in-google-chrome",
+    link: "https://github.com/Sunwood-ai-labs/logged-in-google-chrome-skill",
   },
 ];
 
@@ -56,7 +56,7 @@ export default defineConfig({
       ["meta", { property: "og:url", content: pageUrl }],
       ["meta", { property: "og:image", content: ogImageUrl }],
       ["meta", { property: "og:image:type", content: "image/svg+xml" }],
-      ["meta", { property: "og:image:alt", content: "Logged In Google Chrome social card" }],
+      ["meta", { property: "og:image:alt", content: "Logged In Google Chrome Skill social card" }],
       ["meta", { name: "twitter:card", content: "summary_large_image" }],
       ["meta", { name: "twitter:title", content: title }],
       ["meta", { name: "twitter:description", content: description }],
@@ -74,7 +74,7 @@ export default defineConfig({
         nav: [
           { text: "Home", link: "/" },
           { text: "Guide", link: "/guide/getting-started" },
-          { text: "GitHub", link: "https://github.com/Sunwood-ai-labs/logged-in-google-chrome" },
+          { text: "GitHub", link: "https://github.com/Sunwood-ai-labs/logged-in-google-chrome-skill" },
         ],
         sidebar: [
           {
@@ -92,26 +92,26 @@ export default defineConfig({
       },
     },
     ja: {
-      label: "日本語",
+      label: "\u65e5\u672c\u8a9e",
       lang: "ja-JP",
       title: siteTitle,
       description:
-        "専用 Chrome プロファイルを通常起動し、手動ログイン後に Playwright を CDP 接続で扱うためのガイド。",
+        "\u5c02\u7528 Chrome \u30d7\u30ed\u30d5\u30a1\u30a4\u30eb\u3092\u901a\u5e38\u8d77\u52d5\u3057\u3001\u624b\u52d5\u30ed\u30b0\u30a4\u30f3\u5f8c\u306b Playwright \u3092 CDP \u63a5\u7d9a\u3067\u6271\u3046\u305f\u3081\u306e\u30ac\u30a4\u30c9\u3002",
       themeConfig: {
         logo: "/favicon.svg",
         nav: [
-          { text: "ホーム", link: "/ja/" },
-          { text: "ガイド", link: "/ja/guide/getting-started" },
-          { text: "GitHub", link: "https://github.com/Sunwood-ai-labs/logged-in-google-chrome" },
+          { text: "\u30db\u30fc\u30e0", link: "/ja/" },
+          { text: "\u30ac\u30a4\u30c9", link: "/ja/guide/getting-started" },
+          { text: "GitHub", link: "https://github.com/Sunwood-ai-labs/logged-in-google-chrome-skill" },
         ],
         sidebar: [
           {
-            text: "ガイド",
+            text: "\u30ac\u30a4\u30c9",
             items: [
-              { text: "はじめに", link: "/ja/guide/getting-started" },
-              { text: "使い方", link: "/ja/guide/usage" },
-              { text: "構成", link: "/ja/guide/architecture" },
-              { text: "トラブルシュート", link: "/ja/guide/troubleshooting" },
+              { text: "\u306f\u3058\u3081\u306b", link: "/ja/guide/getting-started" },
+              { text: "\u4f7f\u3044\u65b9", link: "/ja/guide/usage" },
+              { text: "\u69cb\u6210", link: "/ja/guide/architecture" },
+              { text: "\u30c8\u30e9\u30d6\u30eb\u30b7\u30e5\u30fc\u30c8", link: "/ja/guide/troubleshooting" },
             ],
           },
         ],

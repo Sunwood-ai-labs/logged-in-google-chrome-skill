@@ -169,6 +169,21 @@ Draw.io files:
 
 ![Boundaries and Rules JA](./docs/public/logged-in-google-chrome-boundaries-and-rules-ja.svg)
 
+## 🧪 事例
+
+関連レポートの [`logged-in-google-chrome-skill-test`](https://github.com/Sunwood-ai-labs/logged-in-google-chrome-skill-test) では、このワークフローを Google Apps Script 上で最後まで通した実例を確認できます。
+
+- `D:\Prj\onizuka-playwright-profile` の専用 Chrome プロファイルを起動
+- Google に手動ログインした後で Playwright を CDP 接続
+- `script.google.com` を開き、`Sample Sales Spreadsheet Generator` という Apps Script プロジェクトを作成
+- `createSampleSalesSpreadsheet()` を投入して実行
+- `Orders` シートと `Summary` シートを持つスプレッドシートが Google Drive に生成されることを確認
+
+この事例は、Gmail の閲覧だけでなく、認証済みセッションの再利用、エディタ操作、権限承認、スクリプト実行、Drive への成果物生成までを一連で扱えることを示しています。
+
+- 詳細ドキュメント: [Apps Script 事例](./docs/ja/guide/case-studies.md)
+- 元レポート: [logged-in-google-chrome-skill-test](https://github.com/Sunwood-ai-labs/logged-in-google-chrome-skill-test)
+
 ## 💡 想定ユースケース
 
 - Gmail をログイン済み状態で開き、エージェントに下書きや送信を任せる

@@ -170,6 +170,21 @@ Architecture files:
 
 ![Boundaries and Rules](./docs/public/logged-in-google-chrome-boundaries-and-rules.svg)
 
+## 🧪 Case Study
+
+The companion report repository [`logged-in-google-chrome-skill-test`](https://github.com/Sunwood-ai-labs/logged-in-google-chrome-skill-test) shows this workflow running end-to-end inside Google Apps Script.
+
+- Launch dedicated Chrome with the reusable profile at `D:\Prj\onizuka-playwright-profile`
+- Attach Playwright over CDP after manual Google login
+- Open `script.google.com`, create `Sample Sales Spreadsheet Generator`, and paste `createSampleSalesSpreadsheet()`
+- Run the script and generate a spreadsheet with `Orders` and `Summary` sheets
+- Verify the resulting spreadsheet in Google Drive
+
+This is a strong reference case beyond Gmail because it covers authenticated navigation, browser reuse, editor work, authorization, script execution, and Google Drive output creation in one flow.
+
+- Detailed docs: [Apps Script case study](./docs/guide/case-studies.md)
+- Source report: [logged-in-google-chrome-skill-test](https://github.com/Sunwood-ai-labs/logged-in-google-chrome-skill-test)
+
 ## 💡 Use Cases
 
 - Open Gmail in a logged-in Chrome session and let an agent draft or send an email

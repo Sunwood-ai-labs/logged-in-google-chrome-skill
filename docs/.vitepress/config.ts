@@ -82,6 +82,7 @@ export default defineConfig({
             items: [
               { text: "Getting Started", link: "/guide/getting-started" },
               { text: "Usage", link: "/guide/usage" },
+              { text: "Case Studies", link: "/guide/case-studies" },
               { text: "Architecture", link: "/guide/architecture" },
               { text: "Troubleshooting", link: "/guide/troubleshooting" },
             ],
@@ -110,6 +111,7 @@ export default defineConfig({
             items: [
               { text: "\u306f\u3058\u3081\u306b", link: "/ja/guide/getting-started" },
               { text: "\u4f7f\u3044\u65b9", link: "/ja/guide/usage" },
+              { text: "\u4e8b\u4f8b", link: "/ja/guide/case-studies" },
               { text: "\u69cb\u6210", link: "/ja/guide/architecture" },
               { text: "\u30c8\u30e9\u30d6\u30eb\u30b7\u30e5\u30fc\u30c8", link: "/ja/guide/troubleshooting" },
             ],

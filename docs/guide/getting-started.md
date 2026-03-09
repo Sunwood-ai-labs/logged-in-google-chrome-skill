@@ -15,6 +15,11 @@ From the repository root:
 powershell -ExecutionPolicy Bypass -File .\scripts\launch_logged_in_chrome.ps1
 ```
 
+The launch step is only complete when both of these are true:
+
+- a `chrome.exe` process is using the dedicated profile directory
+- the CDP endpoint `http://127.0.0.1:<port>/json/version` is reachable
+
 The default launch uses:
 
 - `D:\Prj\onizuka-playwright-profile`
@@ -30,6 +35,8 @@ Use the newly opened Chrome window and complete Google login yourself.
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\scripts\check_cdp_port.ps1
 ```
+
+If this check fails, stop and relaunch instead of attempting Playwright attach anyway.
 
 ## 🎭 Attach Playwright
 

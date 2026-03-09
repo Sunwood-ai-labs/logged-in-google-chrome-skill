@@ -78,6 +78,11 @@ logged-in-google-chrome-skill/
 powershell -ExecutionPolicy Bypass -File .\scripts\launch_logged_in_chrome.ps1
 ```
 
+起動スクリプトは、次の 2 条件がそろうまで成功として扱いません。
+
+- 専用 `UserDataDir` を使う `chrome.exe` プロセスが存在すること
+- CDP エンドポイント `http://127.0.0.1:<port>/json/version` に到達できること
+
 デフォルト値:
 
 - User data dir: `D:\Prj\onizuka-playwright-profile`
@@ -93,6 +98,8 @@ powershell -ExecutionPolicy Bypass -File .\scripts\launch_logged_in_chrome.ps1
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\scripts\check_cdp_port.ps1
 ```
+
+専用プロフィールの Chrome プロセスが見つからない場合や、CDP エンドポイント確認に失敗した場合は、そのまま Playwright 接続へ進まないでください。
 
 ### 4. Playwright を接続
 

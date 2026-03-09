@@ -78,6 +78,11 @@ logged-in-google-chrome-skill/
 powershell -ExecutionPolicy Bypass -File .\scripts\launch_logged_in_chrome.ps1
 ```
 
+The launch script now waits until both of these are true before it reports success:
+
+- a `chrome.exe` process is using the dedicated `UserDataDir`
+- the CDP endpoint `http://127.0.0.1:<port>/json/version` is reachable
+
 Default values:
 
 - User data dir: `D:\Prj\onizuka-playwright-profile`
@@ -93,6 +98,8 @@ Open the launched Chrome window and complete login yourself.
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\scripts\check_cdp_port.ps1
 ```
+
+Do not continue to Playwright attach if the dedicated-profile Chrome process is missing or the CDP endpoint check fails.
 
 ### 4. Attach Playwright
 
@@ -117,9 +124,9 @@ var attachedPage;
 
 | Script | Purpose |
 | --- | --- |
-| `scripts/launch_logged_in_chrome.ps1` | Start normal Chrome with a dedicated user-data-dir and CDP port |
+| `scripts/launch_logged_in_chrome.ps1` | Start normal Chrome with a dedicated user-data-dir, then wait until the dedicated-profile process and CDP endpoint are both ready |
 | `scripts/close_logged_in_chrome.ps1` | Close Chrome processes that are using the dedicated profile |
-| `scripts/check_cdp_port.ps1` | Verify that the configured CDP port is reachable |
+| `scripts/check_cdp_port.ps1` | Verify that the configured CDP endpoint is reachable |
 
 ## 🔒 Safety Rules
 
@@ -127,6 +134,7 @@ var attachedPage;
 - Do not log into Google from a Playwright-launched Chrome profile
 - Do use a dedicated Chrome profile directory for automation-assisted work
 - Do connect Playwright only after the manual login step is complete
+- Do treat "launch command finished" and "Chrome is ready for CDP attach" as separate checks
 
 ## 📚 Documentation
 

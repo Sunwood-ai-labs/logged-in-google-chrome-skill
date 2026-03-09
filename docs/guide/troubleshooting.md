@@ -19,6 +19,14 @@ If it fails:
 - close the dedicated browser
 - relaunch it
 - make sure the chosen port is not already taken
+- make sure a `chrome.exe` process is actually using the dedicated profile before trying to attach
+- treat "launch command returned" and "CDP is ready" as separate checks
+
+## Launch script returned but Chrome is still not ready
+
+- The updated launch script waits for both the dedicated-profile process and the CDP endpoint
+- If it still fails, do not attach Playwright yet
+- Close the dedicated-profile browser, relaunch it, and re-run the CDP check
 
 ## 🎭 Playwright cannot attach
 

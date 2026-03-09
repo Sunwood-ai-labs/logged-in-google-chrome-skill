@@ -13,6 +13,11 @@
 powershell -ExecutionPolicy Bypass -File .\scripts\launch_logged_in_chrome.ps1
 ```
 
+この起動ステップは、次の 2 条件がそろって初めて完了です。
+
+- 専用 `UserDataDir` を使う `chrome.exe` プロセスが見えていること
+- `http://127.0.0.1:<port>/json/version` に到達できること
+
 デフォルト設定:
 
 - `D:\Prj\onizuka-playwright-profile`
@@ -28,6 +33,8 @@ powershell -ExecutionPolicy Bypass -File .\scripts\launch_logged_in_chrome.ps1
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\scripts\check_cdp_port.ps1
 ```
+
+この確認に失敗した場合は、そのまま Playwright 接続へ進まず、Chrome を閉じて再起動してください。
 
 ## 🎭 Playwright を接続
 

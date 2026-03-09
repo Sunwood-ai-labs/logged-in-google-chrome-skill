@@ -2,10 +2,17 @@ param(
   [int]$Port = 9222
 )
 
-$result = Test-NetConnection -ComputerName 127.0.0.1 -Port $Port
+$ErrorActionPreference = "Stop"
 
-if (-not $result.TcpTestSucceeded) {
-  throw "CDP port $Port is not reachable on 127.0.0.1."
+try {
+  $response = Invoke-WebRequest -Uri "http://127.0.0.1:$Port/json/version" -UseBasicParsing -TimeoutSec 2
+}
+catch {
+  throw "CDP endpoint http://127.0.0.1:$Port/json/version is not reachable."
 }
 
-Write-Output "CDP port $Port is reachable."
+if ($response.StatusCode -ne 200) {
+  throw "CDP endpoint on port $Port returned HTTP $($response.StatusCode)."
+}
+
+Write-Output "CDP endpoint on port $Port is reachable."

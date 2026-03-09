@@ -1,10 +1,10 @@
 # Architecture
 
-## Core idea
+## 🧠 Core idea
 
 The workflow intentionally separates login from automation.
 
-## Sequence
+## 🔄 Sequence
 
 1. Chrome starts as a regular user-facing browser
 2. The browser uses a dedicated `--user-data-dir`
@@ -13,11 +13,11 @@ The workflow intentionally separates login from automation.
 5. Playwright attaches over CDP
 6. Automation continues in the already authenticated browser
 
-## Why not launchPersistentContext for login
+## ❓ Why not launchPersistentContext for login
 
 Google can treat automation-first browser launches differently and may reject login with a security warning. By launching normal Chrome first and attaching later, the workflow is often more stable for Google sign-in pages.
 
-## Important boundary
+## 🚧 Important boundary
 
 - Main daily Chrome profile: for human browsing
 - Dedicated automation profile: for logged-in agent workflows

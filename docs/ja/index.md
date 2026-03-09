@@ -28,7 +28,7 @@ features:
     details: ログイン完了後に connectOverCDP() で接続し、そのまま自動操作を続けます。
 ---
 
-## 概要
+## 🌟 概要
 
 このプロジェクトは、Google 系サービスを扱うときの実用的な手順をまとめています。
 
@@ -37,13 +37,13 @@ features:
 3. CDP ポートを確認
 4. Playwright を後付け接続
 
-## 想定利用者
+## 👥 想定利用者
 
 - Codex や Playwright で Gmail などを扱いたい人
 - Google ログインのセキュリティ警告に悩んでいる人
 - ログイン済みブラウザを再利用したいエージェント運用
 
-## クイックリンク
+## 🔗 クイックリンク
 
 - [はじめに](/ja/guide/getting-started)
 - [使い方](/ja/guide/usage)

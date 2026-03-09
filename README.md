@@ -19,7 +19,7 @@
 
 Use a normal Google Chrome window with a dedicated profile directory, log into Google manually, and then attach Playwright over CDP. This workflow avoids the "This browser or app may not be secure" block that can appear when Google login is attempted from a Playwright-launched browser.
 
-## Features
+## ✨ Features
 
 - Launch a dedicated Chrome profile that is safe to reuse for Gmail, Google Account, and other Google web apps
 - Keep the user's main Chrome profile separate from automation
@@ -28,7 +28,7 @@ Use a normal Google Chrome window with a dedicated profile directory, log into G
 - Include helper scripts for launch, shutdown, and CDP port verification
 - Ship bilingual project docs with VitePress in English and Japanese
 
-## Why This Exists
+## 🎯 Why This Exists
 
 Google login often rejects automation-first browser sessions with a message similar to:
 
@@ -40,14 +40,14 @@ This repository uses a more stable pattern:
 2. Let the user log in manually
 3. Attach Playwright over CDP only after login succeeds
 
-## Requirements
+## 📋 Requirements
 
 - Windows
 - Google Chrome installed
 - Node.js 20+ recommended
 - A workspace with `playwright` or `playwright-core` available when attaching from `js_repl`
 
-## Repository Layout
+## 🗂️ Repository Layout
 
 ```text
 logged-in-google-chrome-skill/
@@ -70,7 +70,7 @@ logged-in-google-chrome-skill/
    `- public/
 ```
 
-## Quick Start
+## 🚀 Quick Start
 
 ### 1. Launch dedicated Chrome
 
@@ -113,7 +113,7 @@ var attachedPage;
 }
 ```
 
-## Scripts
+## 🛠️ Scripts
 
 | Script | Purpose |
 | --- | --- |
@@ -121,14 +121,14 @@ var attachedPage;
 | `scripts/close_logged_in_chrome.ps1` | Close Chrome processes that are using the dedicated profile |
 | `scripts/check_cdp_port.ps1` | Verify that the configured CDP port is reachable |
 
-## Safety Rules
+## 🔒 Safety Rules
 
 - Do not point Playwright at `%LOCALAPPDATA%\Google\Chrome\User Data`
 - Do not log into Google from a Playwright-launched Chrome profile
 - Do use a dedicated Chrome profile directory for automation-assisted work
 - Do connect Playwright only after the manual login step is complete
 
-## Documentation
+## 📚 Documentation
 
 - English docs: [Project Docs](https://sunwood-ai-labs.github.io/logged-in-google-chrome-skill/)
 - Japanese docs: [日本語ドキュメント](https://sunwood-ai-labs.github.io/logged-in-google-chrome-skill/ja/)
@@ -140,12 +140,12 @@ npm install
 npm run docs:dev
 ```
 
-## Use Cases
+## 💡 Use Cases
 
 - Open Gmail in a logged-in Chrome session and let an agent draft or send an email
 - Reuse a Google account session for account settings, Google Drive, or Google Docs tasks
 - Create a repeatable workflow for Codex or Playwright-based agents without touching the user's main browser profile
 
-## License
+## 📄 License
 
 This repository is provided as-is for practical automation workflows around logged-in Google Chrome sessions.

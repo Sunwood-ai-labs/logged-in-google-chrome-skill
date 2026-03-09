@@ -28,7 +28,7 @@ features:
     details: Attach Playwright after login with connectOverCDP() and reuse the authenticated browser session.
 ---
 
-## Overview
+## 🌟 Overview
 
 This project packages a reliable login workflow for Google web apps:
 
@@ -37,13 +37,13 @@ This project packages a reliable login workflow for Google web apps:
 3. Verify the CDP port
 4. Attach Playwright and automate the logged-in session
 
-## Who It Is For
+## 👥 Who It Is For
 
 - Codex users who want a reusable Google-authenticated browser profile
 - Playwright users blocked by Google login warnings in automated browsers
 - Agent workflows that need Gmail, Google Account, Drive, or Docs access
 
-## Quick Links
+## 🔗 Quick Links
 
 - [Getting Started](/guide/getting-started)
 - [Usage](/guide/usage)

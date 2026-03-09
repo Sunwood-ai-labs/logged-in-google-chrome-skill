@@ -1,13 +1,13 @@
 # Getting Started
 
-## Prerequisites
+## 📋 Prerequisites
 
 - Windows
 - Google Chrome
 - Node.js 20+
 - A workspace with `playwright` or `playwright-core`
 
-## Launch the dedicated browser
+## 🚀 Launch the dedicated browser
 
 From the repository root:
 
@@ -21,17 +21,17 @@ The default launch uses:
 - port `9222`
 - `https://accounts.google.com/`
 
-## Log in manually
+## 🔐 Log in manually
 
 Use the newly opened Chrome window and complete Google login yourself.
 
-## Verify the CDP port
+## 🔎 Verify the CDP port
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\scripts\check_cdp_port.ps1
 ```
 
-## Attach Playwright
+## 🎭 Attach Playwright
 
 ```javascript
 var chromium;

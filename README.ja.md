@@ -19,6 +19,10 @@
 
 通常の Google Chrome を専用プロファイルで起動し、人間が先に Google ログインを済ませたあとで、Playwright を CDP 接続でぶら下げるためのリポジトリです。Playwright 起動ブラウザに対して Google が出す「このブラウザまたはアプリは安全でない可能性があります」を避けたいときに使います。
 
+## 🎬 デモ
+
+https://x.com/haru_maki_ch/status/2031011134564872538
+
 ## ✨ 特徴
 
 - Gmail、Google アカウント、各種 Google アプリ用に専用 Chrome プロファイルを分離できる

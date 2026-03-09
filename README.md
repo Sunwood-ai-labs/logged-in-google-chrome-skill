@@ -19,6 +19,10 @@
 
 Use a normal Google Chrome window with a dedicated profile directory, log into Google manually, and then attach Playwright over CDP. This workflow avoids the "This browser or app may not be secure" block that can appear when Google login is attempted from a Playwright-launched browser.
 
+## 🎬 Demo
+
+https://x.com/haru_maki_ch/status/2031011134564872538
+
 ## ✨ Features
 
 - Launch a dedicated Chrome profile that is safe to reuse for Gmail, Google Account, and other Google web apps

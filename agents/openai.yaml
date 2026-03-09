@@ -1,0 +1,4 @@
+interface:
+  display_name: "Logged In Google Chrome"
+  short_description: "Reuse a manual Google login in Chrome via CDP"
+  default_prompt: "Use $logged-in-google-chrome to launch a dedicated Chrome profile, let the user log in manually, and then attach Playwright over CDP."

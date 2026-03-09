@@ -17,6 +17,14 @@ powershell -ExecutionPolicy Bypass -File .\scripts\check_cdp_port.ps1
 - 専用ブラウザを閉じる
 - もう一度起動する
 - ポート競合がないか確認する
+- 専用プロフィールを使う `chrome.exe` プロセスが本当に存在するか確認する
+- 「起動コマンドが返ったこと」と「CDP 接続できること」は別チェックとして扱う
+
+## ⏳ 起動コマンドは終わったのに Chrome 準備ができない
+
+- 更新後の起動スクリプトは、専用プロフィールの Chrome プロセスと CDP エンドポイントの両方を待機する
+- それでも失敗した場合は、Playwright を先に接続しない
+- Chrome を閉じてから再起動し、`scripts/check_cdp_port.ps1` を再実行する
 
 ## 🎭 Playwright が接続できない
 

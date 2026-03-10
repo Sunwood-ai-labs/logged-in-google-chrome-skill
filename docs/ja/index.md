@@ -66,3 +66,4 @@ features:
 - [事例](/ja/guide/case-studies)
 - [構成](/ja/guide/architecture)
 - [トラブルシュート](/ja/guide/troubleshooting)
+- [リリースノート](/ja/guide/release-notes)

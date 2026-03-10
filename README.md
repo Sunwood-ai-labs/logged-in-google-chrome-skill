@@ -144,6 +144,7 @@ var attachedPage;
 
 - English docs: [Project Docs](https://sunwood-ai-labs.github.io/logged-in-google-chrome-skill/)
 - Japanese docs: [日本語ドキュメント](https://sunwood-ai-labs.github.io/logged-in-google-chrome-skill/ja/)
+- Release notes: [English](https://sunwood-ai-labs.github.io/logged-in-google-chrome-skill/guide/release-notes) / [日本語](https://sunwood-ai-labs.github.io/logged-in-google-chrome-skill/ja/guide/release-notes)
 - Local VitePress setup:
 
 ```bash

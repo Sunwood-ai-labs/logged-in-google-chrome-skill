@@ -74,6 +74,7 @@ export default defineConfig({
         nav: [
           { text: "Home", link: "/" },
           { text: "Guide", link: "/guide/getting-started" },
+          { text: "Release Notes", link: "/guide/release-notes" },
           { text: "GitHub", link: "https://github.com/Sunwood-ai-labs/logged-in-google-chrome-skill" },
         ],
         sidebar: [
@@ -85,6 +86,7 @@ export default defineConfig({
               { text: "Case Studies", link: "/guide/case-studies" },
               { text: "Architecture", link: "/guide/architecture" },
               { text: "Troubleshooting", link: "/guide/troubleshooting" },
+              { text: "Release Notes", link: "/guide/release-notes" },
             ],
           },
         ],
@@ -103,6 +105,7 @@ export default defineConfig({
         nav: [
           { text: "\u30db\u30fc\u30e0", link: "/ja/" },
           { text: "\u30ac\u30a4\u30c9", link: "/ja/guide/getting-started" },
+          { text: "\u30ea\u30ea\u30fc\u30b9\u30ce\u30fc\u30c8", link: "/ja/guide/release-notes" },
           { text: "GitHub", link: "https://github.com/Sunwood-ai-labs/logged-in-google-chrome-skill" },
         ],
         sidebar: [
@@ -114,6 +117,7 @@ export default defineConfig({
               { text: "\u4e8b\u4f8b", link: "/ja/guide/case-studies" },
               { text: "\u69cb\u6210", link: "/ja/guide/architecture" },
               { text: "\u30c8\u30e9\u30d6\u30eb\u30b7\u30e5\u30fc\u30c8", link: "/ja/guide/troubleshooting" },
+              { text: "\u30ea\u30ea\u30fc\u30b9\u30ce\u30fc\u30c8", link: "/ja/guide/release-notes" },
             ],
           },
         ],

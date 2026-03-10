@@ -65,3 +65,4 @@ The [`logged-in-google-chrome-skill-test`](https://github.com/Sunwood-ai-labs/lo
 - [Case Studies](/guide/case-studies)
 - [Architecture](/guide/architecture)
 - [Troubleshooting](/guide/troubleshooting)
+- [Release Notes](/guide/release-notes)

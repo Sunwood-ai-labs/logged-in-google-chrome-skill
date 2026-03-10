@@ -143,6 +143,7 @@ var attachedPage;
 
 - 英語 docs: [Project Docs](https://sunwood-ai-labs.github.io/logged-in-google-chrome-skill/)
 - 日本語 docs: [日本語ドキュメント](https://sunwood-ai-labs.github.io/logged-in-google-chrome-skill/ja/)
+- リリースノート: [English](https://sunwood-ai-labs.github.io/logged-in-google-chrome-skill/guide/release-notes) / [日本語](https://sunwood-ai-labs.github.io/logged-in-google-chrome-skill/ja/guide/release-notes)
 - ローカル起動:
 
 ```bash

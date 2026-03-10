@@ -1,12 +1,14 @@
 # リリースノート
 
-![リリースノートヘッダー](/release-notes-header.svg)
+![リリースノートヘッダー](/releases/v1.0.0-header.svg)
 
 ## v1.0.0 初回公開リリース案
 
 公開日: 2026 年 3 月 10 日
 
 このページは、Logged In Google Chrome Skill の現時点の内容を、初回公開向けのリリースノート案としてまとめたものです。主眼は、通常の Chrome を専用プロファイルで起動し、Google に手動ログインしたあとで Playwright を CDP 接続する、安全寄りの運用パターンを再利用しやすい形で提供することにあります。
+
+このリリース専用ヘッダー画像: `/releases/v1.0.0-header.svg`
 
 ## ハイライト
 

@@ -1,12 +1,14 @@
 # Release Notes
 
-![Release Notes Header](/release-notes-header.svg)
+![Release Notes Header](/releases/v1.0.0-header.svg)
 
 ## v1.0.0 Initial Public Release Draft
 
 Published: March 10, 2026
 
 This draft captures the current repository state for the first public release of the Logged In Google Chrome Skill. The project is centered on a safer Google login workflow: launch regular Chrome with a dedicated profile, sign in manually, then attach Playwright over CDP.
+
+Header asset for this release: `/releases/v1.0.0-header.svg`
 
 ## Highlights
 

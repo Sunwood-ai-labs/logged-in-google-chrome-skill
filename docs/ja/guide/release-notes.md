@@ -1,6 +1,6 @@
 # リリースノート
 
-![リリースノートヘッダー](/release-notes-header.svg)
+![リリースノートヘッダー](/release-notes-header.png)
 
 ## v1.0.0 初回公開リリース案
 

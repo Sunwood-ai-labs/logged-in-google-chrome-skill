@@ -1,6 +1,6 @@
 # Release Notes
 
-![Release Notes Header](/release-notes-header.png)
+![Release Notes Header](/release-notes-header.svg)
 
 ## v1.0.0 Initial Public Release Draft
 

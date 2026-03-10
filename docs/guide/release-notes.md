@@ -2,7 +2,7 @@
 
 ![Release Notes Header](/release-notes-header.svg)
 
-## Initial Public Release Draft
+## v1.0.0 Initial Public Release Draft
 
 Published: March 10, 2026
 
